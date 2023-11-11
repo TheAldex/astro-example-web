@@ -6,13 +6,17 @@ A portfolio website of an artist developed using Astro framework, Tailwind and R
 
 1. Clone the repository.
 2. Install the dependencies running:
-   ```sh
-    npm install
-   ```
+
+```sh
+npm install
+```
+
 4. Run the server:
-  ```sh
-  npm run dev
-  ```
+
+```sh
+npm run dev
+```
+
 5. Enjoy!
 
 ## All Available Commands

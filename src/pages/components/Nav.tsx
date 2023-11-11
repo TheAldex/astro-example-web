@@ -42,14 +42,15 @@ export default function Nav() {
           strokeLinecap="round"
         />
       </svg>
-      <div>
+      <div className="flex flex-1 items-center">
         <img src={avatar} alt="Profile Picture" />
+        <div>
+          {/* TITLE */}
+          <h1 className="text-3xl font-bold ml-8">
+            <a href="/">Hua.</a>
+          </h1>
+        </div>
       </div>
-
-      {/* TITLE */}
-      <h1 className="text-lg font-bold">
-        <a href="/">Hua.</a>
-      </h1>
 
       {matches && (
         <div className="flex gap-12">

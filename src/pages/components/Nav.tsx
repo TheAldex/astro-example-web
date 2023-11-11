@@ -27,21 +27,6 @@ export default function Nav() {
 
   return (
     <nav className="realtive mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32">
-      <svg
-        className="absolute bottom-0 left-1/2 -translate-x-1/2"
-        width="250"
-        height={4}
-        viewBox="0 0 250 4"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 2L428 2"
-          strokeWidth={2}
-          stroke="#282828"
-          strokeLinecap="round"
-        />
-      </svg>
       <div className="flex flex-1 items-center">
         <img src={avatar} alt="Profile Picture" />
         <div>
@@ -54,9 +39,18 @@ export default function Nav() {
 
       {matches && (
         <div className="flex gap-12">
-          <a href="/">Home</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
+          <a className="text-black hover:text-orange-600" href="/">
+            Home
+          </a>
+          <a className="text-black hover:text-orange-600" href="/gallery">
+            Gallery
+          </a>
+          <a className="text-black hover:text-orange-600" href="/services">
+            Services
+          </a>
+          <a className="text-black hover:text-orange-600" href="/contact">
+            Contact
+          </a>
         </div>
       )}
 
@@ -94,6 +88,9 @@ export default function Nav() {
           >
             <motion.a variants={itemMotion} href="/">
               Home
+            </motion.a>
+            <motion.a variants={itemMotion} href="/gallery">
+              Gallery
             </motion.a>
             <motion.a variants={itemMotion} href="/services">
               Services
